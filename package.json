@@ -11,7 +11,7 @@
     "help": "playwright --help",
     "test": "npx playwright test",
     "open:webkit": "node browsers/webkit.js",
-    "test:spec": "npx playwright test medlink-demands.spec.ts",
+    "test:spec": "npx playwright test <spec>",
     "codegen": "npx playwright codegen <url here>"
   },
   "devDependencies": {
