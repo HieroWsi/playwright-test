@@ -1,0 +1,25 @@
+# .job_template: &job_configuration  
+#   image: mcr.microsoft.com/playwright:v1.25.0-focal
+#   artifacts:
+#     when: always
+#     paths:
+#       - ./playwright-report/**
+#     expire_in: 10 days
+#   retry:
+#     max: 2
+#     when:
+#       - always
+      
+# .some-script: &some-script
+#     - npm ci
+
+# stages:
+#   - test
+
+# e2e:
+#   <<: *job_configuration  
+#   stage: test
+#   before_script:
+#     - *some-script
+#   script:
+#     - npm run test:spec --headed

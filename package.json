@@ -1,7 +1,6 @@
 {
-  "name": "playwright-typescript",
-  "version": "1.0.0",
-  "author": "Kamil",
+  "name": "playwright-test",
+  "version": "1.0.1",
   "license": "ISC",
   "repository": {
     "type": "git",
@@ -10,12 +9,13 @@
   "scripts": {
     "help": "playwright --help",
     "test": "npx playwright test",
-    "open:webkit": "node browsers/webkit.js",
-    "test:spec": "npx playwright test <spec>",
-    "codegen": "npx playwright codegen <url here>"
+    "test:spec": "npx playwright test loginPage.spec.ts",
+    "codegen": "npx playwright codegen https:xxx"
   },
   "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@playwright/test": "^1.25.1",
+    "dotenv": "^16.0.3",
     "prettier": "2.7.1"
   }
 }
